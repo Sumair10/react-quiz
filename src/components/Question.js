@@ -1,12 +1,11 @@
 import React from 'react'
+import Options from "./Options";
 
-export default ({question}) => {
+export default ({question , dispatch ,answer}) => {
   return (
     <div>
       <h4>{question.question}</h4>
-        <div className='options'>
-          {question.options.map(option => <button key={option} className='btn btn-option'>{option}</button>)}
-        </div>
+        <Options question={question} dispatch={dispatch} answer={answer}/>
 
     </div>
   )
