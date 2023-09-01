@@ -3,6 +3,7 @@
   --color-dark: #495057;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
+  --color-error : #780000;
 
   --color-theme: #1098ad;
   --color-accent: #ffa94d;
@@ -126,6 +127,21 @@ progress {
   cursor: pointer;
   border-radius: 100px;
   transition: 0.3s;
+  margin-top: 15px;
+}
+
+.btn-disable {
+  display: block;
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  border: 2px solid var(--color-error);
+  background-color: var(--color-error);
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 0.3s;
+  margin-top: 15px;
 }
 
 .btn:not([disabled]):hover {
